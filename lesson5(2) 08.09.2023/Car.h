@@ -1,14 +1,14 @@
-#pragma once // Файл дизайна
+п»ї#pragma once // Р¤Р°Р№Р» РґРёР·Р°Р№РЅР°
 
 class Car {
-	// Реализация класса - закрытая часть
+	// Р РµР°Р»РёР·Р°С†РёСЏ РєР»Р°СЃСЃР° - Р·Р°РєСЂС‹С‚Р°СЏ С‡Р°СЃС‚СЊ
 	char* model;
 	char* color;
 	int year;
 	double price;
 
-public: // Интерфейс класса - открытая часть
-	// Конструкторы/деструктор
+public: // РРЅС‚РµСЂС„РµР№СЃ РєР»Р°СЃСЃР° - РѕС‚РєСЂС‹С‚Р°СЏ С‡Р°СЃС‚СЊ
+	// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 	Car();
 	Car(const char* m, const char* c, int y, double pr);
 	~Car();
@@ -16,16 +16,15 @@ public: // Интерфейс класса - открытая часть
 	void Input();
 	void Print();
 
-	// Инпекторы (геттеры)
+	// РРЅРїРµРєС‚РѕСЂС‹ (РіРµС‚С‚РµСЂС‹)
 	char* GetModel();
 	char* GetColor();
 	int GetYear();
 	double GetPrice();
 
-	// Модификаторы (сеттеры)
+	// РњРѕРґРёС„РёРєР°С‚РѕСЂС‹ (СЃРµС‚С‚РµСЂС‹)
 	void SetModel(const char* m);
 	void SetColor(const char* c);
 	void SetYear(int y);
 	void SetPrice(double pr);
 };
-
