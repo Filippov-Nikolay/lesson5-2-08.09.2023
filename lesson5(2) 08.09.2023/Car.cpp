@@ -59,11 +59,11 @@ void Car::Input() {
 	// YEAR
 	cout << "Enter year car: ";
 	cin >> ye;
-	year = ye;
+	this->year = ye;
 
 	cout << "Enter price car: ";
 	cin >> pr;
-	price = pr;
+	this->price = pr;
 }
 void Car::Print() {
 	cout << "Model car: " << this->model << endl;
@@ -73,16 +73,16 @@ void Car::Print() {
 }
 
 char* Car::GetModel() {
-	return model;
+	return this->model;
 }
 char* Car::GetColor() {
-	return color;
+	return this->color;
 }
 int Car::GetYear() {
-	return year;
+	return this->year;
 }
 double Car::GetPrice() {
-	return price;
+	return this->price;
 }
 
 void Car::SetModel(const char* m) {
@@ -104,8 +104,8 @@ void Car::SetColor(const char* c) {
 	strcpy_s(this->color, strlen(c) + 1, c);
 }
 void Car::SetYear(int y) {
-	year = y;
+	this->year = y;
 }
 void Car::SetPrice(double pr) {
-	price = pr;
+	this->price = pr;
 }
